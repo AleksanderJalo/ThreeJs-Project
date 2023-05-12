@@ -1,10 +1,10 @@
 import React from 'react'
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import MonitorModel from './Monitor.jsx'
 
 const Monitor = () => {
-    const gltf = useLoader(GLTFLoader, 'Monitor.glb');
-    return <primitive object={gltf.scene}/>
+    return <MonitorModel/>
       
 }
 
