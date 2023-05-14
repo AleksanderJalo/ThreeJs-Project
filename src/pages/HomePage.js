@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { Suspense } from "react";
 import Keyboard from '../components/Keyboard';
 import * as THREE from "three";
+import Cube from '../components/Cube';
 
 const HomePage = () => {
   const pointZero = new THREE.Vector3(0, 0, 0);
@@ -15,7 +16,8 @@ const HomePage = () => {
   return (
     <Suspense>
       <Canvas className="bg-slate-900" camera={{ position: [4, 0.5, 0] }}>
-        <Keyboard />
+        {/* <Keyboard /> */}
+        <Cube/>
         <pointLight position={[10, 5, 10]} />
         <OrbitControls />
         <RigKeyboard />
