@@ -1,4 +1,3 @@
-import Box from "../components/Box";
 import { Canvas, useThree, useFrame } from "react-three-fiber";
 import { Stars } from "@react-three/drei";
 import Monitor from "../components/Monitor";
@@ -35,7 +34,6 @@ const StartingPage = (props) => {
     >
       <pointLight position={[10, 5, 10]} />
       <Stars />
-      <Box />
       <Monitor />
       <Rig />
     </Canvas>
