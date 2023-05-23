@@ -21,15 +21,23 @@ export default function Model(props) {
   }, []);
   const detectKey = (e) => {
     action = `${e.key.toUpperCase()}_Action`;
+    if (e.key == " ") {
+      action = "Space_Action"
+    }
+    console.log(action);
     action = actions[action];
+    
   };
+
   useFrame(() => {
     if (action != null) {
+      action.reset()
       action.setLoop(THREE.LoopOnce);
       action.play();
+      action = null;
     }
 
-    action = null;
+    
   });
   return (
     <group ref={group} {...props} dispose={null}>
