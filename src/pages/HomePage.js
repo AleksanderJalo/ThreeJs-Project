@@ -15,8 +15,6 @@ const HomePage = () => {
   return (
     <Suspense>
       <Canvas className="bg-slate-900" camera={{ position: [4, 0.5, 0] }}>
-        {/* <Keyboard /> */}
-
         <NewKeyTest/>
         <pointLight position={[10, 5, 10]} />
         <OrbitControls />

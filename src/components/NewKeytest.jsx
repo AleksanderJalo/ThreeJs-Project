@@ -12,7 +12,6 @@ export default function Model(props) {
   const { nodes, materials, animations } = useGLTF('/NewKeytest.glb')
   const { actions } = useAnimations(animations, group)
   useFrame(() => {
-    console.log(actions);
     actions.Space_animation.play();
     
     

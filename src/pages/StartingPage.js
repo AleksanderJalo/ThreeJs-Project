@@ -21,6 +21,7 @@ const StartingPage = (props) => {
         vec.set(0.1, 0, camera.position.z);
         camera.position.lerp(vec, 0.025);
         camera.lookAt(pointZero);
+        
       } else {
         anim = false;
       }
