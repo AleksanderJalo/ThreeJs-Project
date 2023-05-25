@@ -15,6 +15,7 @@ export default function Model(props) {
   );
   const { actions } = useAnimations(animations, group);
   let action = null;
+  const keycapSound = new Audio('buttonClick.mp3')
 
   useEffect(() => {
     document.addEventListener("keydown", detectKey, true);
@@ -31,9 +32,11 @@ export default function Model(props) {
 
   useFrame(() => {
     if (action != null) {
+      keycapSound.pause();
       action.reset()
       action.setLoop(THREE.LoopOnce);
       action.play();
+      keycapSound.play();
       action = null;
     }
 
