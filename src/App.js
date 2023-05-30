@@ -14,7 +14,7 @@ function App() {
           <div className="text-white text-xl font-fixedsys mt-5 mb-10">
             Lorem ipsum dolor sit amet.
           </div>
-          <div className="text-red-300 text-sm font-fixedsys mb-10">
+          <div className="text-amber-500 text-sm font-fixedsys mb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
             venenatis metus, lobortis consequat tortor. Sed quis viverra elit.
             Quisque sit amet enim sit amet dui ullamcorper pulvinar non vitae
