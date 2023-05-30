@@ -34,7 +34,7 @@ const StartingPage = (props) => {
       onClick={onCanvasClick}
     >
       <pointLight position={[10, 5, 10]} />
-      <Stars />
+      {/* <Stars /> */}
       <Monitor />
       <Rig />
     </Canvas>

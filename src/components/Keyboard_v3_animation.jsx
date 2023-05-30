@@ -19,10 +19,10 @@ export default function Model(props) {
 
   useEffect(() => {
     document.addEventListener("keydown", detectKey, true);
-  }, []);
+  },[]);
   const detectKey = (e) => {
     action = `${e.key.toUpperCase()}_Action`;
-    if (e.key == " ") {
+    if (e.key === " ") {
       action = "Space_Action"
     }
     console.log(action);

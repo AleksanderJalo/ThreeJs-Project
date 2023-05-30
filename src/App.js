@@ -7,14 +7,10 @@ import Navbar from "./components/Navbar";
 function App() {
   const [afterAnim, setAfterAnim] = useState(false);
   return (
-    <div className="w-screen h-screen">
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        {!afterAnim && <StartingPage setAfterAnim={setAfterAnim} />}
-        {afterAnim && <HomePage />}
-      </div>
+    <div className="w-screen h-screen flex flex-col">
+      <Navbar />
+      {!afterAnim && <StartingPage setAfterAnim={setAfterAnim} />}
+      {afterAnim && <HomePage />}
     </div>
   );
 }
