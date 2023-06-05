@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import KeyboardScreen from "../components/KeyboardScreen";
 import Navbar from "../components/Navbar";
 import LoadingPage from "./LoadingPage";
+import Button from "../components/Button";
 const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
   return (
     <div className="w-full h-full">
       {!loaded && <LoadingPage setLoaded={setLoaded} />}
-      {loaded && (
-        <div className="flex flex-col min-h-screen">
+      {(
+        <div className={`${loaded ? "" : "hidden "}flex flex-col min-h-screen`}>
           <Navbar />
           <div className="flex grow">
             <div className="bg-slate-900 basis-1/2 flex flex-col px-8 grow">
@@ -26,8 +27,8 @@ const HomePage = () => {
                 nibh.
               </div>
               <div className="flex justify-around text-white">
-                <button>Aaaa</button>
-                <button>Aaaa</button>
+                <Button color="red" text="Sign Up"/>
+                <Button color="yellow" text="Log In"/>
               </div>
             </div>
             <div className="border-2 border-black flex flex-col grow">
