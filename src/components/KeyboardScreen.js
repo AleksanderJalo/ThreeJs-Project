@@ -1,7 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { Suspense } from "react";
-import Keyboard from "./Kb65_noanim"
+import Keyboard from "./Kb65_noanimtest"
 import * as THREE from "three";
 import Lobby from './Lobby';
 
