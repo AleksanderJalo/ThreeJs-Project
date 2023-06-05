@@ -1,5 +1,4 @@
 import { Canvas, useThree, useFrame } from "react-three-fiber";
-import { Stars } from "@react-three/drei";
 import Monitor from "../components/Monitor";
 import * as THREE from "three";
 import { useState } from "react";
@@ -21,7 +20,6 @@ const StartingPage = (props) => {
         vec.set(0.1, 0, camera.position.z);
         camera.position.lerp(vec, 0.025);
         camera.lookAt(pointZero);
-        
       } else {
         anim = false;
       }
@@ -30,12 +28,11 @@ const StartingPage = (props) => {
   return (
     <Canvas
       className="bg-slate-900"
-      camera={{ position: [4, 0.5, 0] }}
+      camera={{ position: [1, 0.8, 0] }}
       onClick={onCanvasClick}
     >
       <pointLight position={[10, 5, 10]} />
-      {/* <Stars /> */}
-      <Monitor />
+      <Monitor/>
       <Rig />
     </Canvas>
   );
