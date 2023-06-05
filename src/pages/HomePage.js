@@ -28,7 +28,7 @@ const HomePage = () => {
               </div>
               <div className="flex justify-around text-white">
                 <Button color="red" text="Sign Up"/>
-                <Button color="yellow" text="Log In"/>
+                <Button color="green" text="Log Out"/>
               </div>
             </div>
             <div className="border-2 border-black flex flex-col grow">
