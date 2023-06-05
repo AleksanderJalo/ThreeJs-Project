@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react";
 
 const LoadingPage = (props) => {
   const [dotsNumber, setDotsNumber] = useState(0);
-  let count;
-    if (dotsNumber > 11) {
-        props.setLoaded(true);
-    }
+
+  if (dotsNumber > 11) {
+    props.setLoaded(true);
+  }
   useEffect(() => {
+    let count;
     count = setInterval(() => {
-      setDotsNumber(dotsNumber + 1);
-    }, 200);
+      setDotsNumber((prevState) => {
+        return prevState + 1;
+      });
+    }, 50);
 
     return () => clearInterval(count);
   });
