@@ -39,7 +39,7 @@ const LoadingPage = (props) => {
           ) : (
             <div className="hidden w-[20px] h-[20px] bg-white mt-[3px] "></div>
           )}
-          {dotsNumber > 3 ? (
+          {dotsNumber > 3 ? ( 
             <div className=" w-[20px] h-[20px] bg-white mt-[3px] "></div>
           ) : (
             <div className="hidden w-[20px] h-[20px] bg-white mt-[3px] "></div>

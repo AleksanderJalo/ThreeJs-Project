@@ -9,7 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.14",
-    "framer-motion": "^10.12.4",
+    "framer-motion": "^10.12.16",
     "gltfjsx": "^6.1.11",
     "maath": "^0.5.3",
     "pixel-borders": "^1.1.4",

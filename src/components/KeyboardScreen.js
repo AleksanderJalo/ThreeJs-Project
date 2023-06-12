@@ -3,7 +3,6 @@ import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { Suspense } from "react";
 import Keyboard from "./Kb65_noanimtest"
 import * as THREE from "three";
-import Lobby from './Lobby';
 
 const HomePage = () => {
   const pointZero = new THREE.Vector3(0, 0, 0);
