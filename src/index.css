@@ -5,7 +5,9 @@
   font-family: "Fixedsys";
   src: url("../public/Fixedsys.ttf")
 }
-
+@font-face {
+font-family: "Nasa";
+src: url("../public/nasalization.otf")}
 .gowno{
   color: red;
 }

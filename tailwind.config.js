@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fixedsys: ["Fixedsys", "sans-serif"]
+        fixedsys: ["Fixedsys", "sans-serif"],
+        nasa: ["Nasa", "sans-serif"]
       }
     },
   },

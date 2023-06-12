@@ -7,7 +7,7 @@ function App() {
   const [afterAnim, setAfterAnim] = useState(false);
   return (
     <div className="w-screen h-screen flex flex-col">
-      {!afterAnim && <StartingPage setAfterAnim={ setAfterAnim } />}
+      {!afterAnim && <StartingPage afterAnim={afterAnim} setAfterAnim={ setAfterAnim } />}
       {afterAnim && <HomePage />}  
     </div>
   );

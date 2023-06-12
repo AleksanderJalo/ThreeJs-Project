@@ -1,7 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { Suspense } from "react";
-import Keyboard from "./Kb65_noanimtest"
+import Keyboard from "./Kb65_noanimtest";
 import * as THREE from "three";
 
 const HomePage = () => {
@@ -14,9 +14,9 @@ const HomePage = () => {
   };
   return (
     <Suspense>
-      <Canvas className="bg-slate-900" camera={{ position: [4, 0.5, 0] }}>
-      <Keyboard/>
-        <pointLight position={[10, 5, 10]} intensity={4}/>
+      <Canvas className="bg-slate-500 relative" camera={{ position: [4, 0.5, 0] }}>
+        <Keyboard />
+        <pointLight position={[10, 5, 10]} intensity={4} />
         <OrbitControls />
         <RigKeyboard />
       </Canvas>
