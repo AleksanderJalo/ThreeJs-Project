@@ -12,6 +12,10 @@ src: url("../public/nasalization.otf")}
   color: red;
 }
 
+@font-face{
+font-family: "Merchandise";
+src: url("../public/Merchandise.ttf")}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

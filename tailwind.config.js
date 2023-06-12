@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         fixedsys: ["Fixedsys", "sans-serif"],
-        nasa: ["Nasa", "sans-serif"]
+        nasa: ["Nasa", "sans-serif"],
+        merchandise: ["Merchandise", "sans-serif"]
       }
     },
   },
