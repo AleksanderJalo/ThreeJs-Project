@@ -1,53 +1,43 @@
 import React, { useState } from "react";
 import KeyboardScreen from "../components/KeyboardScreen";
 import Navbar from "../components/Navbar";
-import Button from "../components/Button";
-import KeyboardHomePageModal from "../components/KeyboardHomePageModal";
 
 const HomePage = () => {
   return (
     <div className="w-full h-full">
       {
-        <div className="flex flex-col bg-slate-900 min-w-screen min-h-screen max-w-screen max-h-screen">
+        <div className="flex flex-col bg-[#DFD0BB] min-w-screen min-h-screen max-w-screen max-h-screen">
           <Navbar />
-          <div className="bg-slate-600 rounded-xl flex grow m-10"> Aaaa</div>
-          <div className="rounded-xl flex grow w-full justify-around items-center">
-            <div className="bg-white rounded-2xl p-10"> Box </div>
-            <div className="bg-white rounded-2xl p-10"> Box </div>
-            <div className="bg-white rounded-2xl p-10"> Box </div>
-            <div className="bg-white rounded-2xl p-10"> Box </div>
-          </div>
-          {/* <div className="flex grow bg-slate-900">
-            <div className="bg-slate-900 basis-1/2 flex flex-col px-8 grow font-nasa">
-              <div className="text-white text-xl mt-5 mb-10">
-                Lorem ipsum dolor sit amet.
+          <div className="flex grow min-w-full justify-center gap-22">
+            <div className="flex flex-col grow m-10 gap-10 w-1/2 ">
+              <div className="bg-[#474344] rounded-xl text-white w-full h-1/2 flex flex-col">
+                <div className="text-[#e5bd77] text-8xl px-6 pt-2">Custom</div>
+                <div className="text-[#DFD0BB] text-8xl px-6">Keyboards</div>
+                <div className="text-[#DFD0BB] text-2xl px-6 text-justify mt-12 ">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris elit ante, dapibus non nisl at, varius interdum risus.
+                  Nam lectus lacus, tempus sed rhoncus id, vestibulum eget ex.
+                  Etiam viverra.
+                </div>
               </div>
-              <div className="text-amber-500 text-sm font-fixedsys mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
-                venenatis metus, lobortis consequat tortor. Sed quis viverra
-                elit. Quisque sit amet enim sit amet dui ullamcorper pulvinar
-                non vitae turpis. Sed purus dui, dictum ut diam a, fringilla
-                pulvinar libero. Pellentesque feugiat mi lacus, eget vehicula
-                libero facilisis ac. Curabitur pellentesque tempor hendrerit.
-                Pellentesque urna dui, pretium ac lectus sed, maximus aliquet
-                nibh.
-              </div>
-              <div className="flex justify-around text-white">
-                <Button color="red" text="Sign Up" />
-                <Button color="green" text="Log Out" />
+              <div className="h-1/2 flex justify-between">
+                <div className="border-[#474344] border-8  w-1/2 rounded-xl">
+                  bbb
+                </div>
+                <div className="flex flex-col justify-between w-full gap-5 ml-4">
+                  <div className="bg-[#E5BD77] w-full h-1/4 rounded-xl">
+                    ccc
+                  </div>
+                  <div className="border-[#474344] border-8 rounded-xl  grow">
+                    ddd
+                  </div>
+                </div>
               </div>
             </div>
-            <div className=" grow flex flex-col m-20 border-8 border-black relative items-center">
-              <div className="bg-black text-white text-3xl text-center py-4 font-nasa w-full">
-                Fully <span className="text-amber-500">Custom</span>isable
-                Keyboards
-              </div>
+            <div className="grow bg-[#474344] m-10 rounded-xl w-1/2">
               <KeyboardScreen />
-              <div className="bg-slate-500 w-full">
-                <KeyboardHomePageModal />
-              </div>
             </div>
-          </div> */}
+          </div>
         </div>
       }
     </div>

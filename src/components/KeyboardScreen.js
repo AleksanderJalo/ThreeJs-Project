@@ -14,7 +14,7 @@ const HomePage = () => {
   };
   return (
     <Suspense>
-      <Canvas className="bg-slate-500 relative" camera={{ position: [4, 0.5, 0] }}>
+      <Canvas className="bg-[#474344] relative rounded-xl" camera={{ position: [4, 0.5, 0] }}>
         <Keyboard />
         <pointLight position={[10, 5, 10]} intensity={4} />
         <OrbitControls />
