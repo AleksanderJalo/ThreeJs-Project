@@ -9,7 +9,8 @@ const NavbarButton = (props) => {
         y: -20,
         transition: { ease: "easeOut" },
       }}
-      className="cursor-pointer mx-8 py-0.5 border-double rounded-2xl pb-2 px-1 border-[#cc7952] hover:border-b-4 hover:text-[#cc7952]"
+      onClick={() => props.setLayout(props.children)}
+      className={`cursor-pointer mx-8 border-solid rounded-md px-1 border-[#cc7952] hover:border-b-4 hover:text-[#cc7952] ${(props.children === props.layout ? "border-b-4" : "")}`}
     >
       {props.children}
     </motion.div>

@@ -1,6 +1,6 @@
 import { Canvas, useThree, useFrame } from "react-three-fiber";
 import { useState } from "react";
-import Lobby from "../components/Lobby_2_v1";
+import Lobby from "../components/Lobby_3"
 import * as THREE from "three";
 import LoadingPage from "../pages/LoadingPage.js";
 

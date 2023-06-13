@@ -1,4 +1,3 @@
-import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { Suspense } from "react";
 import Keyboard from "./Kb65_noanimtest";
@@ -10,14 +9,15 @@ const HomePage = () => {
     const { camera } = useThree();
     useFrame(() => {
       camera.lookAt(pointZero);
+      console.log(camera.position);
+      console.log(camera.rotation);
     });
   };
   return (
     <Suspense>
-      <Canvas className="bg-[#474344] relative rounded-xl" camera={{ position: [4, 0.5, 0] }}>
+      <Canvas className="bg-gradient-to-r from-slate-500 to-slate-800 relative rounded-xl" camera={{ position: [0.2, 1.77, 0.93] }}>
         <Keyboard />
         <pointLight position={[10, 5, 10]} intensity={4} />
-        <OrbitControls />
         <RigKeyboard />
       </Canvas>
     </Suspense>
