@@ -11,7 +11,7 @@ const Adam = (props) => {
               transition={{   duration: 1 }}
         className="bg-[#E5BD77] w-2/5 rounded-xl p-64  relative"
       >
-        <div className="absolute bg-[#474344] left-5 bottom-5 w-full h-full rounded-xl">
+        <div className="absolute bg-[#474344] right-5 bottom-5 w-full h-full rounded-xl">
           AAA
         </div>
       </motion.div>}
