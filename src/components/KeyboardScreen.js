@@ -9,8 +9,6 @@ const HomePage = () => {
     const { camera } = useThree();
     useFrame(() => {
       camera.lookAt(pointZero);
-      console.log(camera.position);
-      console.log(camera.rotation);
     });
   };
   return (

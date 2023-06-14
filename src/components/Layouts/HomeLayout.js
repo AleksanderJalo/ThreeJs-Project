@@ -6,20 +6,20 @@ import RightUpHomeModal from "./HomeModals/RightUpHomeModal";
 import RightDownHomeModal from "./HomeModals/RightDownHomeModal";
 const HomeLayout = (props) => {
   return (
-    <div className="flex min-w-full justify-center h-full grow mb-20">
-      <div className="flex items-between ">
-        <div className="flex flex-col mx-10 gap-10 w-3/5 mt-10 h-full" >
-          <LeftUpHomeModal layout={props.layout} />
-          <div className="flex justify-between h-3/5">
-            <LeftDownHomeModal layout={props.layout} />
-            <MiddleDownHomeModal layout={props.layout} />
+    <div className="flex min-w-full justify-center h-full grow mb-20 gap-12">
+      <div className="bg-behindModal w-2/5  h-1/2 rounded-xl p-64  relative">
+        <div className="absolute bg-modalDark left-5 bottom-5 w-full h-full rounded-xl flex flex-col items-center">
+          <div className="text-mainBackground text-2xl xl:text-6xl  pt-2 font-nasa mr-[113px]">
+            <div>
+              Custom<span className="text-behindModal">ize</span>
+            </div>
+          </div>
+          <div className="text-mainBackground text-2xl xl:text-6xl font-nasa ml-[112px]">
+            Key<span className="text-behindModal">board</span>
           </div>
         </div>
-        <div className="grow mt-10 rounded-xl w-2/5 flex flex-col gap-8 h-full mr-10">
-          <RightUpHomeModal layout={props.layout} />
-          <RightDownHomeModal layout={props.layout} />
-        </div>
       </div>
+      <div>bbb</div>
     </div>
   );
 };
