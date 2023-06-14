@@ -4,7 +4,7 @@ import NavbarButton from "./NavbarButton.js";
 
 const Navbar = (props) => {
   return (
-    <div className="flex w-full justify-evenly items-center border-solid bg-[#dfd0BB] text-[#943d2c] font-fixedsys text-3xl">
+    <div className="flex w-full justify-evenly items-center border-solid bg-[#dfd0BB] text-[#943d2c] font-fixedsys text-3xl ">
       <div className="flex justify-between gap-5">
         <NavbarButton setLayout={props.setLayout} layout={props.layout}>
           Products
