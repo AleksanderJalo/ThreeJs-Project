@@ -1,30 +1,30 @@
 import React from "react";
-import LeftUpHomeModal from "./HomeModals/LeftUpHomeModal";
-import LeftDownHomeModal from "./HomeModals/LeftDownHomeModal";
-import MiddleDownHomeModal from "./HomeModals/MiddleDownHomeModal";
-import RightUpHomeModal from "./HomeModals/RightUpHomeModal";
-import RightDownHomeModal from "./HomeModals/RightDownHomeModal";
+import CustomizeKeyModal from "./HomeLayoutModals/CustomizeKeyModal";
+import KeyboardScreen from "../KeyboardScreen";
+import UseVarietyModal from "./HomeLayoutModals/UseVarietyModal";
 const HomeLayout = (props) => {
   return (
-    <div className="flex min-w-full justify-center h-full grow mb-20 gap-12">
-      <div className="bg-behindModal w-2/5  h-1/2 rounded-xl p-36 relative z-20">
-        <div className="absolute bg-modalDark left-5 top-5 w-full h-full rounded-xl flex flex-col z-20 items-center">
-          <div className="text-mainBackground text-4xl xl:text-6xl font-nasa mr-[113px] pt-10">
-            <div>
-              Custom<span className="text-behindModal">ize</span>
+    <div className="flex justify-center gap-44">
+      <div className="flex flex-col items-center w-1/3 gap-32">
+        <CustomizeKeyModal />
+        <div className="flex">
+          <UseVarietyModal />
+
+          <div className="relative w-full h-full font-nasa ml-32">
+            <div className="absolute bg-behindModal h-full rounded-xl -top-3 -left-3 w-1/2"></div>
+            <div className="bg-modalDark rounded-xl items-center relative flex flex-col text-mainBackground px-10 py-12 w-1/2">
+              Use variety of customizable setting to adjust your own personal
+              thnig .. i mean keyboard.. we can offer a lots of adjustable
             </div>
-          </div>
-          <div className="text-mainBackground text-4xl xl:text-6xl font-nasa ml-[112px]">
-            Key<span className="text-behindModal">board</span>
-          </div>
-          <div className="text-mainBackground font-fixedsys pb-32 py-10 px-3 md:px-6">
-            Create your dream keyboard set ... Choose from boardbase sizes to
-            keycap colors. Variety of possibilities that you can create on your
-            own. Be creative. Be uniqe. Be yourself.
           </div>
         </div>
       </div>
-      <div>bbb</div>
+
+      <div className="w-2/5 mt-10">
+        <div className="h-2/3">
+          <KeyboardScreen />
+        </div>
+      </div>
     </div>
   );
 };

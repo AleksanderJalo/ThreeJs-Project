@@ -32,7 +32,7 @@ const StartingPage = (props) => {
   return (
     <div className="relative w-full h-full">
       <Canvas
-        className="bg-slate-900"
+        className="bg-[#0f172a]"
         camera={{ position: [3, 2, 3], rotation: [0, 0.5, 0] }}
         onClick={onCanvasClick}
       >
