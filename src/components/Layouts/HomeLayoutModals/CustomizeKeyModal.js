@@ -9,7 +9,7 @@ const CustomizeKeyModal = (props) => {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -1800, opacity: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative  w-full h-full  font-nasa mt-10"
+          className="relative  w-full h-full  font-nasa mt-10 ml-[200px]"
         >
           <div className="absolute bg-behindModal h-full w-full rounded-xl -top-3 -left-3"></div>
           <div className="bg-modalDark rounded-xl items-center relative flex flex-col">

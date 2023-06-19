@@ -5,7 +5,7 @@ import NavbarButton from "./NavbarButton.js";
 const Navbar = (props) => {
   return (
     <div className="flex w-full justify-evenly items-center border-solid bg-[#dfd0BB] text-[#943d2c] font-fixedsys text-3xl ">
-      <div className="flex justify-between gap-5">
+      <div className="flex justify-center gap-10 w-1/3">
         <NavbarButton setLayout={props.setLayout} layout={props.layout}>
           Create
         </NavbarButton>
@@ -26,7 +26,7 @@ const Navbar = (props) => {
           alt="logo"
         ></img>
       </motion.div>
-      <div className="flex justify-between gap-10 mx-8">
+      <div className="flex justify-center gap-10  w-1/3">
         <NavbarButton setLayout={props.setLayout} layout={props.layout}>
           About Us
         </NavbarButton>
