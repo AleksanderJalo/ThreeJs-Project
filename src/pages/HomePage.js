@@ -3,7 +3,7 @@ import HomeLayout from "../components/Layouts/HomeLayout";
 import Navbar from "../components/Navbar";
 import ContactLayout from "../components/Layouts/ContactLayout";
 import GalleryLayout from "../components/Layouts/GalleryLayout";
-import ProductsLayout from "../components/Layouts/ProductsLayout";
+import CreateLayout from "../components/Layouts/CreateLayout";
 import { AnimatePresence, motion } from "framer-motion";
 import AboutUsLayout from "../components/Layouts/AboutUsLayout";
 import LogInButton from "../components/LogInButton";
@@ -27,10 +27,8 @@ const HomePage = () => {
         {showLayout === "Home" && <HomeLayout layout={layout} />}
         {showLayout === "About Us" && <AboutUsLayout layout={layout} />}
         {showLayout === "Contact" && <ContactLayout layout={layout} />}
-        {/* {layout === "Products" && <ProductsLayout />}
-          {layout === "Gallery" && <GalleryLayout />}
-          {layout === "About Us" && <AboutUsLayout />}
-          // {layout === "Contact" && <ContactLayout />} */}
+        {showLayout === "Gallery" && <GalleryLayout />}
+        {showLayout === "Create" && <CreateLayout/>}
       </div>
       <div className="absolute bottom-4 right-[136px]">
         <div className="relative flex gap-4">
